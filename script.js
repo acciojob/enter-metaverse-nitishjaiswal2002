@@ -7,5 +7,4 @@ button.addEventListener("click" , () => {
 	h1.innerText = "Entered Metaverse";
 	document.body.insertBefore(h1, para)
 para.remove();
-	
 })
