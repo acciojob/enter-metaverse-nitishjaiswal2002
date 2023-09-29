@@ -1,11 +1,13 @@
 //your JS code here. If required.
-const button =document.getElementById("enterBtn");
-const para= document.getElementById("status");
+const statusParagraph = document.getElementById("status");
+        const enterButton = document.getElementById("enterBtn");
+        const resultHeader = document.getElementById("result");
 
-button.addEventListener("click" , () => {
-	let h1 = document.createElement("h1");
-	h1.id ="status";
-	h1.innerText = "Entered Metaverse";
-	document.body.insertBefore(h1, para)
-para.remove();
-})
+        // Add a click event listener to the button
+        enterButton.addEventListener("click", function () {
+            // Update the text in the <p> tag
+            statusParagraph.textContent = "Entered Metaverse";
+
+            // Display the updated text in the <h1> tag
+            resultHeader.textContent = statusParagraph.textContent;
+        });
